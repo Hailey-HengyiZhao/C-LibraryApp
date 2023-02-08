@@ -1,0 +1,108 @@
+
+==67437== HEAP SUMMARY:
+==67437==     in use at exit: 1,007 bytes in 28 blocks
+==67437==   total heap usage: 98 allocs, 70 frees, 102,487 bytes allocated
+==67437==
+==67437== 9 bytes in 1 blocks are indirectly lost in loss record 1 of 10
+==67437==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:43                                                                3)
+==67437==    by 0x403A80: sdds::Utils::alcpy(char const*) (Utils.cpp:67)
+==67437==    by 0x4035A1: sdds::Publication::read(std::istream&) (Publication.cp                                                                p:188)
+==67437==    by 0x401DA4: sdds::Book::read(std::istream&) (Book.cpp:79)
+==67437==    by 0x4036DE: sdds::operator>>(std::istream&, sdds::Publication&) (P                                                                ublication.cpp:212)
+==67437==    by 0x404B8C: sdds::LibApp::newPublication() (LibApp.cpp:209)
+==67437==    by 0x405127: sdds::LibApp::run() (LibApp.cpp:290)
+==67437==    by 0x4052B5: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 9 bytes in 1 blocks are indirectly lost in loss record 2 of 10
+==67437==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:43                                                                3)
+==67437==    by 0x403B34: sdds::Utils::alcpy(char const*, int) (Utils.cpp:82)
+==67437==    by 0x401F0F: sdds::Book::read(std::istream&) (Book.cpp:98)
+==67437==    by 0x4036DE: sdds::operator>>(std::istream&, sdds::Publication&) (P                                                                ublication.cpp:212)
+==67437==    by 0x404B8C: sdds::LibApp::newPublication() (LibApp.cpp:209)
+==67437==    by 0x405127: sdds::LibApp::run() (LibApp.cpp:290)
+==67437==    by 0x4052B5: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 10 bytes in 1 blocks are indirectly lost in loss record 3 of 10
+==67437==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:43                                                                3)
+==67437==    by 0x403A80: sdds::Utils::alcpy(char const*) (Utils.cpp:67)
+==67437==    by 0x4035A1: sdds::Publication::read(std::istream&) (Publication.cp                                                                p:188)
+==67437==    by 0x4036DE: sdds::operator>>(std::istream&, sdds::Publication&) (P                                                                ublication.cpp:212)
+==67437==    by 0x404BBE: sdds::LibApp::newPublication() (LibApp.cpp:213)
+==67437==    by 0x405127: sdds::LibApp::run() (LibApp.cpp:290)
+==67437==    by 0x4052B5: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 66 (56 direct, 10 indirect) bytes in 1 blocks are definitely lost in l                                                                oss record 4 of 10
+==67437==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==67437==    by 0x404B9E: sdds::LibApp::newPublication() (LibApp.cpp:212)
+==67437==    by 0x405127: sdds::LibApp::run() (LibApp.cpp:290)
+==67437==    by 0x4052B5: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 82 (64 direct, 18 indirect) bytes in 1 blocks are definitely lost in l                                                                oss record 5 of 10
+==67437==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==67437==    by 0x404B6C: sdds::LibApp::newPublication() (LibApp.cpp:208)
+==67437==    by 0x405127: sdds::LibApp::run() (LibApp.cpp:290)
+==67437==    by 0x4052B5: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 84 bytes in 4 blocks are indirectly lost in loss record 6 of 10
+==67437==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:43                                                                3)
+==67437==    by 0x403A80: sdds::Utils::alcpy(char const*) (Utils.cpp:67)
+==67437==    by 0x402EFE: sdds::Publication::operator=(sdds::Publication const&)                                                                 (Publication.cpp:86)
+==67437==    by 0x402CF6: sdds::Publication::Publication(sdds::Publication const                                                                &) (Publication.cpp:38)
+==67437==    by 0x404646: sdds::LibApp::load() (LibApp.cpp:82)
+==67437==    by 0x404EAE: sdds::LibApp::initiate() (LibApp.cpp:272)
+==67437==    by 0x405096: sdds::LibApp::LibApp(char const*) (LibApp.cpp:281)
+==67437==    by 0x4052A6: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 108 bytes in 5 blocks are indirectly lost in loss record 7 of 10
+==67437==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:43                                                                3)
+==67437==    by 0x403A80: sdds::Utils::alcpy(char const*) (Utils.cpp:67)
+==67437==    by 0x401A5B: sdds::Book::Book(sdds::Book const&) (Book.cpp:28)
+==67437==    by 0x404552: sdds::LibApp::load() (LibApp.cpp:73)
+==67437==    by 0x404EAE: sdds::LibApp::initiate() (LibApp.cpp:272)
+==67437==    by 0x405096: sdds::LibApp::LibApp(char const*) (LibApp.cpp:281)
+==67437==    by 0x4052A6: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 123 bytes in 5 blocks are indirectly lost in loss record 8 of 10
+==67437==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:43                                                                3)
+==67437==    by 0x403A80: sdds::Utils::alcpy(char const*) (Utils.cpp:67)
+==67437==    by 0x402EFE: sdds::Publication::operator=(sdds::Publication const&)                                                                 (Publication.cpp:86)
+==67437==    by 0x402CF6: sdds::Publication::Publication(sdds::Publication const                                                                &) (Publication.cpp:38)
+==67437==    by 0x401A2F: sdds::Book::Book(sdds::Book const&) (Book.cpp:27)
+==67437==    by 0x404552: sdds::LibApp::load() (LibApp.cpp:73)
+==67437==    by 0x404EAE: sdds::LibApp::initiate() (LibApp.cpp:272)
+==67437==    by 0x405096: sdds::LibApp::LibApp(char const*) (LibApp.cpp:281)
+==67437==    by 0x4052A6: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 308 (224 direct, 84 indirect) bytes in 4 blocks are definitely lost in                                                                 loss record 9 of 10
+==67437==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==67437==    by 0x404631: sdds::LibApp::load() (LibApp.cpp:82)
+==67437==    by 0x404EAE: sdds::LibApp::initiate() (LibApp.cpp:272)
+==67437==    by 0x405096: sdds::LibApp::LibApp(char const*) (LibApp.cpp:281)
+==67437==    by 0x4052A6: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== 551 (320 direct, 231 indirect) bytes in 5 blocks are definitely lost i                                                                n loss record 10 of 10
+==67437==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==67437==    by 0x40453D: sdds::LibApp::load() (LibApp.cpp:73)
+==67437==    by 0x404EAE: sdds::LibApp::initiate() (LibApp.cpp:272)
+==67437==    by 0x405096: sdds::LibApp::LibApp(char const*) (LibApp.cpp:281)
+==67437==    by 0x4052A6: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==67437==    by 0x4053CA: main (LibAppMain_prof.cpp:28)
+==67437==
+==67437== LEAK SUMMARY:
+==67437==    definitely lost: 664 bytes in 11 blocks
+==67437==    indirectly lost: 343 bytes in 17 blocks
+==67437==      possibly lost: 0 bytes in 0 blocks
+==67437==    still reachable: 0 bytes in 0 blocks
+==67437==         suppressed: 0 bytes in 0 blocks
+==67437==
+==67437== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+Script done, file is student_output.txt
